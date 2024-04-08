@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ηλεκτρονικό κατάστημα</title>
+  <link rel="stylesheet" type="text/css" href="site.css">
+  <script src="site.js"></script>
+</head>
+<body>
+  <h1>Καλώς ήρθατε στο Ηλεκτρονικό Κατάστημα!</h1>
+  
+  <div id="product1">
+    <h2>Μέλι Ελάτου</h2>
+    <p>Τιμή: 8 ευρώ / κιλό</p>
+    <div id="weightControls">
+      <button onclick="increaseWeight('product1')">+</button>
+      <button onclick="decreaseWeight('product1')">-</button>
+      <div id="weightDisplay">Κιλά: 0</div>
+    </div>
+    <button onclick="addToCart('Μέλι Ελάτου', 8)">Προσθήκη στο καλάθι</button>
+  </div>
+
+  <div id="product2">
+    <h2>Θυμαρίσιο μέλι</h2>
+    <p>Τιμή: 10,5 ευρώ / κιλό</p>
+    <div id="weightControls2">
+      <button onclick="increaseWeight('product2')">+</button>
+      <button onclick="decreaseWeight('product2')">-</button>
+      <div id="weightDisplay2">Κιλά: 0</div>
+    </div>
+    <button onclick="addToCart('Θυμαρίσιο μέλι', 10.5)">Προσθήκη στο καλάθι</button>
+  </div>
+  
+  <div id="cart">
+    <h2>Το καλάθι μου</h2>
+    <ul id="cartItems"></ul>
+    <p id="totalPrice">Συνολική τιμή: 0 ευρώ</p>
+    <button onclick="clearCart()">Καθαρισμός καλαθιού</button>
+  </div>
+</body>
+</html>
+
+
+
+
+		
